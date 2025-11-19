@@ -1,15 +1,28 @@
-# IoT-Lampadas
+# Sistema Inteligente de Controle e Monitoramento de Lâmpadas via IoT
 
-Arquivo principal, com:
+Este repositório contém o código-fonte, a documentação, esquemas e resultados do projeto de automação de iluminação para ambientes domésticos, focado em proporcionar conforto e redução de ansiedade via controle inteligente de cor e brilho.
 
-Resumo do Projeto: objetivos, tecnologias, motivação (conforto, redução da ansiedade).
+## Funcionalidades
+- Controle dinâmico da iluminação (brilho/temperatura) por potenciômetro analógico
+- Comunicação assíncrona entre os módulos via MQTT (broker público)
+- Simulação completa nas plataformas (https://wokwi.com/projects/447923693002369025 , https://wokwi.com/projects/447924455020686337 e https://www.hivemq.com/demos/websocket-client/)
+- Código-fonte organizado por publisher e subscriber
+- Gravação de vídeo apresentando resultado e arquitetura
+- Documentação técnica do hardware e testes executados
 
-Funcionalidades: controle remoto de cor e brilho da iluminação.
+## Como rodar (simulação)
+1. Abra o esquema Wokwi disponível em /hardware.
+2. Faça upload dos códigos em /publisher e /subscriber.
+3. Siga as instruções de uso em cada subpasta.
+4. Para medições de latência, consulte o arquivo em /resultados.
 
-Instruções de uso rápido: requisitos, como simular no Wokwi, como rodar localmente.
+## Documentação extra
+- Artigo final em `doc/artigo_final.pdf`
+- Vídeo demonstrativo: [link para YouTube]
+- Prints de funcionamento/evidências
+- Tabela e gráfico dos testes
 
-Links: vídeo de demonstração (YouTube), artigo em PDF, plataformas e citações principais.
-
-Estrutura do repositório: explique cada subpasta.
-
-Créditos: autores, orientador(a), e contato.
+## Créditos
+- Aluna: Verônica Lima de Faria
+- Orientação: Prof. Andre Luis de Oliveira
+- Universidade Presbiteriana Mackenzie (2025)
