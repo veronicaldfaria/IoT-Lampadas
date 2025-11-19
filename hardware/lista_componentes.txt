@@ -1,0 +1,7 @@
+ESP32 DevKitC x2
+Potenciômetro linear 10k
+Anel NeoPixel WS2812B - 12 LEDs
+Protoboard virtual (Wokwi)
+Fontes virtuais (5V)
+Cabos/jumpers
+Broker público: broker.mqttdashboard.com
