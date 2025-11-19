@@ -1,0 +1,40 @@
+{
+  "version": 1,
+  "author": "Uri Shaked",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "board-esp32-devkit-c-v4", "id": "esp", "top": -37.58, "left": -96.37, "attrs": {} },
+    {
+      "type": "wokwi-led",
+      "id": "led1",
+      "top": -128.4,
+      "left": -111.4,
+      "attrs": { "color": "red" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r1",
+      "top": -72.85,
+      "left": -86.4,
+      "attrs": { "value": "220" }
+    },
+    {
+      "type": "wokwi-led-ring",
+      "id": "ring1",
+      "top": -277.76,
+      "left": -94.81,
+      "attrs": { "pixels": "16" }
+    }
+  ],
+  "connections": [
+    [ "esp:TX", "$serialMonitor:RX", "", [] ],
+    [ "esp:RX", "$serialMonitor:TX", "", [] ],
+    [ "esp:GND.2", "r1:2", "black", [ "v0" ] ],
+    [ "r1:1", "led1:C", "green", [ "h-9.6", "v-19.2" ] ],
+    [ "led1:A", "esp:2", "green", [ "h144", "v212.02" ] ],
+    [ "ring1:GND", "esp:GND.2", "black", [ "v19.2", "h172.8", "v96.82" ] ],
+    [ "ring1:VCC", "esp:3V3", "red", [ "v76.8", "h-134.4", "v39.22" ] ],
+    [ "ring1:DIN", "esp:2", "green", [ "v9.6", "h105.6", "v240.82" ] ]
+  ],
+  "dependencies": {}
+}
